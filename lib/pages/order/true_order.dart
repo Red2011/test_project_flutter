@@ -271,12 +271,12 @@ class _TrueOrderState extends State<TrueOrder> {
                                     ))
                                   ),
                                   onPressed: () async => _pickImageFromCamera(),
-                                  child: const Text(
+                                  child: Text(
                                     "Сделать фото",
                                     style: TextStyle(
                                         color: Color.fromRGBO(98, 146, 241, 1),
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 16
+                                        fontSize: 14 * thisWidth
                                     ),
                                   )
                               ),
@@ -294,13 +294,13 @@ class _TrueOrderState extends State<TrueOrder> {
                                           width: 1
                                       ))
                                   ),
-                                  onPressed: () async => _pickImageFromGallery,
-                                  child: const Text(
+                                  onPressed: () async => _pickImageFromGallery(),
+                                  child: Text(
                                     "Добавить фото",
                                     style: TextStyle(
                                         color: Color.fromRGBO(98, 146, 241, 1),
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 16
+                                        fontSize: 14 * thisWidth
                                     ),
                                   )
                               ),
